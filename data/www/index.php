@@ -34,9 +34,48 @@ body{
 	right: 0;
 	margin: auto;
 }
+#info, #contact{
+	color: #eeeeee;
+	position: absolute;
+}
+ul{
+	list-style-type: none;
+	padding: 0;
+}
+#info{
+	bottom: 0;
+	left:0;
+	padding-left: 40px;
+}
+#contact{
+	width:100%;
+	background: rgba(0,0,0,0.5);
+	bottom: 0;
+	right:0;
+	text-align: right;
+	padding-right: 40px;
+}
+a{
+	color: #7B7CC8;
+	text-decoration: none;
+}
 </style>
 </head>
 <body>
 <div id="h">darkengine</div>
+<div id="contact">
+<ul>
+<li><a href="mailto:simon@piston.pw">Email</a></li>
+<li><a href="https://github.com/darkengine-io">Github</a></li>
+<li><a href="https://linkedin.com/in/darkengine">LinkedIn</a></li>
+</ul>
+</div>
+<div id="info">
+<ul>
+<li>infosec</li>
+<li>embedded systems</li>
+<li>asm</li>
+</ul>
+</div>
 </body>
 </html>
