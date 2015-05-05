@@ -9,10 +9,12 @@ $image = ob_get_clean();
 ?>
 <title>darkengine</title>
 <style>
-body{
+html{
 	background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(<?php echo '"'.$image.'"'; ?>) no-repeat center center fixed;
 	background-size: cover;
 	font-family: Terminus, monospace;
+	height:100%;
+	overflow:hidden;
 }
 @font-face{
 	font-family: Terminus;
