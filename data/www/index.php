@@ -12,6 +12,7 @@ $image = ob_get_clean();
 body{
 	background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(<?php echo '"'.$image.'"'; ?>) no-repeat center center fixed;
 	background-size: cover;
+	font-family: Terminus, monospace;
 }
 @font-face{
 	font-family: Terminus;
@@ -21,8 +22,6 @@ body{
 #h{
 	text-align:center;
 	color: #ffffff;
-	font-weight: bold;
-	font-family: Terminus, monospace;
 	font-size: 45px;
 	text-shadow: 2px 2px #111111;
 
