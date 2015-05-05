@@ -1,6 +1,7 @@
 <!doctype html>
 <html>
 <head>
+<link rel="icon" type="image/png" href="/static/favicon.png" />
 <?php
 ob_start();
 require('random_image.php');
