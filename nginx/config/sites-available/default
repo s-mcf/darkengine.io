@@ -3,47 +3,6 @@
 server {
 	listen 80;
 	listen [::]:80;
-	server_name    darkengine.io;
-	return         301 https://$server_name$request_uri;
-}
-
-server {
-	server_name    darkengine.io;
-
-	# SSL configuration
-	listen 443 ssl;
-	listen [::]:443 ssl;
-
-	ssl on;
-	ssl_certificate /etc/nginx/ssl/darkengine.io.chain.pem;
-	ssl_certificate_key /etc/nginx/ssl/darkengine.io.key;
-
-	ssl_stapling on;
-	ssl_stapling_verify on;
-	ssl_trusted_certificate /etc/nginx/ssl/ocsp_chain.pem;
-	resolver 8.8.8.8 8.8.4.4 valid=300s;
-	resolver_timeout 5s;
-
-	ssl_session_cache shared:SSL:10m;
-	ssl_session_timeout 24h;
-	ssl_buffer_size 1400;
-	ssl_session_tickets off;
-
-	ssl_dhparam /etc/nginx/ssl/dhparam.pem;
-
-	ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
-	ssl_ciphers AES256+EECDH:AES256+EDH:!aNULL;
-	ssl_prefer_server_ciphers on;
-
-	add_header Strict-Transport-Security "max-age=31536000";
-	add_header X-Frame-Options DENY;
-	add_header X-Content-Type-Options nosniff;
-
-	# Note: You should disable gzip for SSL traffic.
-	# See: https://bugs.debian.org/773332
-	#
-	# Read up on ssl_ciphers to ensure a secure configuration.
-	# See: https://bugs.debian.org/765782
 
 	root /var/www/html;
 
@@ -63,6 +22,4 @@ server {
 		# With php5-cgi alone:
 		fastcgi_pass php:9000;
 	}
-
 }
-
