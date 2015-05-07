@@ -13,12 +13,12 @@ $image = ob_get_clean();
 html{
 	background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(<?php echo '"'.$image.'"'; ?>) no-repeat center center fixed;
 	background-size: cover;
-	font-family: Terminus, monospace;
+	font-family: Terminus, Terminus-woff, monospace;
 	height:100%;
 	overflow:hidden;
 }
 @font-face{
-	font-family: Terminus;
+	font-family: Terminus-woff;
 	src: url('/static/fonts/terminus.woff');
 	font-weight: bold;
 }
