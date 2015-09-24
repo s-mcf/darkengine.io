@@ -1,0 +1,70 @@
+body{
+	font-family: Terminus, Terminus-woff, monospace;
+	height:100%;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	overflow:hidden;
+	margin:0;
+}
+@font-face{
+	font-family: Terminus-woff;
+	src: url('/static/fonts/terminus.woff');
+	font-weight: bold;
+}
+#h{
+	text-align:center;
+	color: #ffffff;
+	font-size: 45px;
+	text-shadow: 2px 2px #111111;
+
+	width: 225px;
+	height: 1em;
+	position: absolute;
+	top:0;
+	bottom: 40%;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+#the_end{
+	text-align: justify;
+	font-size: 12px;
+	width: 400px;
+	margin-top: 15px;
+	margin-left: -87px;
+	padding: 1px 15px;
+	background-color: rgba(0,0,0,0.6);
+}
+#info, #contact{
+	color: #eeeeee;
+	position: absolute;
+}
+ul{
+	list-style-type: none;
+	padding: 0;
+}
+#info{
+	bottom: 0;
+	left:0;
+	padding-left: 40px;
+}
+#contact{
+	width:100%;
+	background: rgba(0,0,0,0.5);
+	bottom: 0;
+	right:0;
+	text-align: right;
+	padding-right: 40px;
+}
+a{
+	color: #7B7CC8;
+	text-decoration: none;
+}
+button{
+	background-color: rgba(0,0,0,0.5);
+	border: 1px solid #ddd;
+	color: #ddd;
+	font-family: Terminus, Terminus-woff, monospace;
+}
