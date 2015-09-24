@@ -10,12 +10,17 @@ $image = ob_get_clean();
 ?>
 <title>darkengine</title>
 <style>
-html{
+body{
 	background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(<?php echo '"'.$image.'"'; ?>) no-repeat center center fixed;
 	background-size: cover;
 	font-family: Terminus, Terminus-woff, monospace;
 	height:100%;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
 	overflow:hidden;
+	margin:0;
 }
 @font-face{
 	font-family: Terminus-woff;
@@ -78,6 +83,9 @@ button{
 	font-family: Terminus, Terminus-woff, monospace;
 }
 </style>
+<script type="text/javascript" src="/static/js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="/static/js/jquery.bgswitcher.js"></script>
+<script type="text/javascript" src="/static/js/rotate.js"></script>
 </head>
 <body>
 <div id="h">darkengine
