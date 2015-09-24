@@ -16,10 +16,10 @@ body{
 	background-size: cover;
 }
 </style>
-<script type="text/javascript" src="/static/js/jquery-1.11.3.min.js"></script>
-<script type="text/javascript" src="/static/js/jquery.bgswitcher.js"></script>
-<script type="text/javascript" src="/static/js/rotate.js"></script>
-<script type="text/javascript" src="/static/js/music.js"></script>
+<script defer type="text/javascript" src="/static/js/jquery-1.11.3.min.js"></script>
+<script defer type="text/javascript" src="/static/js/jquery.bgswitcher.js"></script>
+<script defer type="text/javascript" src="/static/js/rotate.js"></script>
+<script defer type="text/javascript" src="/static/js/music.js"></script>
 </head>
 <body>
 <div id="h">darkengine
