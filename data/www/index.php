@@ -28,14 +28,23 @@ html{
 	font-size: 45px;
 	text-shadow: 2px 2px #111111;
 
-	width: 200px;
+	width: 225px;
 	height: 1em;
 	position: absolute;
 	top:0;
-	bottom: 20%;
+	bottom: 40%;
 	left: 0;
 	right: 0;
 	margin: auto;
+}
+#the_end{
+	text-align: justify;
+	font-size: 12px;
+	width: 400px;
+	margin-top: 15px;
+	margin-left: -87px;
+	padding: 1px 15px;
+	background-color: rgba(0,0,0,0.6);
 }
 #info, #contact{
 	color: #eeeeee;
@@ -72,6 +81,11 @@ button{
 </head>
 <body>
 <div id="h">darkengine
+<div id="the_end">
+<p>When our journey is complete, when every step has been walked, when everything has been seen, I'd like to hope that in our last moments, we will rise to the night sky triumphant, shouting our unheard victory to the world: "I am free!"</p>
+<p>The intricately detailed, the unthinkably simple. The vivid luminosity, the subtle pulchritude. Rainy streets, busy highways, a cramped apartment in Hong Kong. When there is no more to be seen, the curtain will be lowered, but the audience will remain silent and sombre.</p>
+<p>And it will be beautiful.</p>
+</div>
 <audio id="kyoku">
 <source src="/static/music/aisatsana.mp3" />
 </audio>
