@@ -86,6 +86,7 @@ button{
 <script type="text/javascript" src="/static/js/jquery-1.11.3.min.js"></script>
 <script type="text/javascript" src="/static/js/jquery.bgswitcher.js"></script>
 <script type="text/javascript" src="/static/js/rotate.js"></script>
+<script type="text/javascript" src="/static/js/music.js"></script>
 </head>
 <body>
 <div id="h">darkengine
@@ -113,15 +114,5 @@ button{
 <li>asm</li>
 </ul>
 </div>
-<script type="text/javascript">
-var kyoku = document.getElementById('kyoku'),
-    begin = document.getElementById('begin');
-
-begin.onclick = function () {
-	if(kyoku.paused){
-		kyoku.play();
-	}
-};
-</script>
 </body>
 </html>
