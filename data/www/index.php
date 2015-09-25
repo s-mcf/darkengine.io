@@ -12,8 +12,11 @@ $image = ob_get_clean();
 <title>darkengine</title>
 <style>
 body{
-	background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(<?php echo '"'.$image.'"'; ?>) no-repeat center center fixed;
+	background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(<?php echo '"'.$image.'"'; ?>);
 	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center, center center;
+	background-attachment: scroll, fixed;
 }
 </style>
 <script defer type="text/javascript" src="/static/js/jquery-1.11.3.min.js"></script>
