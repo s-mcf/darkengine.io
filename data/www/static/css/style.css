@@ -58,6 +58,9 @@ ul{
 	text-align: right;
 	padding-right: 40px;
 }
+#begin{
+	display: none;
+}
 a{
 	color: #7B7CC8;
 	text-decoration: none;
